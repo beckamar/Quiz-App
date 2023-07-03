@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardView_radio">20dp</dimen>
+    <dimen name="crearCuentaDimen_cardView">24dp</dimen>
+    <dimen name="recyclerView">15dp</dimen>
+    <dimen name="paddingCategoria">45dp</dimen>
+    <dimen name=""
+</resources>

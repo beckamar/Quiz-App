@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "925923321247",
+    "project_id": "quiz-ebc91",
+    "storage_bucket": "quiz-ebc91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925923321247:android:e6268dd32777ffa5bf89aa",
+        "android_client_info": {
+          "package_name": "com.beckamar.quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925923321247-qq7u831n5v35svajqgmn8hb4fjipquhj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBat9tbL8PYs17EOMGzDANXJWAqjFTZung"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925923321247-qq7u831n5v35svajqgmn8hb4fjipquhj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925923321247:android:c669300677a8146dbf89aa",
+        "android_client_info": {
+          "package_name": "com.beckamar.quizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925923321247-40t9jnr82vr9qtobiuklf5308n4ug7he.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beckamar.quizapp",
+            "certificate_hash": "9f2af1e8dbfe5d544fed18be14a72ed01be57b70"
+          }
+        },
+        {
+          "client_id": "925923321247-qq7u831n5v35svajqgmn8hb4fjipquhj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBat9tbL8PYs17EOMGzDANXJWAqjFTZung"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925923321247-qq7u831n5v35svajqgmn8hb4fjipquhj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
