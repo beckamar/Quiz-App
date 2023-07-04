@@ -8,141 +8,103 @@
     tools:context=".SigupActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="289dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="124dp"
+        android:id="@+id/login_logo"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/height_logo"
+        android:layout_marginTop="@dimen/mrgTop_logo"
+        app:srcCompat="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="412dp"
-        android:layout_height="474dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="80dp"
-        app:cardCornerRadius="@dimen/cardView_radio"
+        android:id="@+id/card_login"
+        android:layout_width="@dimen/width_cardStart"
+        android:layout_height="@dimen/height_cardStart"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:cardCornerRadius="@dimen/radio_cardStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/login_logo">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/color_white"
-
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="@string/crearCuentaTitle_cardView"
+                android:text="@string/txt_login"
+                android:textSize="@dimen/sizeTxt_login"
                 android:textColor="@color/colorPurple"
-                android:textSize="@dimen/crearCuentaDimen_cardView"
                 android:textStyle="bold"
-
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/mrg_box"
                 />
 
             <View
-                android:id="@+id/view3"
-                android:layout_width="80dp"
-                android:layout_height="5dp"
+                android:layout_width="@dimen/widthLine_login"
+                android:layout_height="@dimen/heightLine_login"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_weight="0"
-                android:background="@drawable/background"
-                android:baselineAligned="false"
-                android:foregroundGravity="center" />
+                android:layout_marginTop="@dimen/mrg_box"
+                android:background="@color/colorPurple" />
 
             <EditText
                 android:id="@+id/nameBox"
+                android:hint="@string/hint_name"
+                android:inputType="textEmailAddress"
+                android:ems="20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginStart="@dimen/mrg_box"
+                android:layout_marginEnd="@dimen/mrg_box"
+                android:layout_marginTop="@dimen/mrg_box2"
                 android:background="@drawable/textbox"
-                android:ems="10"
-                android:hint="Nombre completo"
-                android:inputType="textPersonName"
-                android:padding="15dp" />
+                android:padding="@dimen/padding_box" />
 
             <EditText
-                android:id="@+id/emailBox"
+                android:id="@+id/emailBox"                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:ems="10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginStart="@dimen/mrg_box"
+                android:layout_marginEnd="@dimen/mrg_box"
+                android:layout_marginTop="@dimen/mrg_box2"
+                android:layout_marginBottom="@dimen/mrg_box2"
                 android:background="@drawable/textbox"
-                android:ems="10"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:padding="15dp" />
+                android:padding="@dimen/padding_box" />
 
             <EditText
                 android:id="@+id/passwordBox"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:ems="10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginStart="@dimen/mrg_box"
+                android:layout_marginEnd="@dimen/mrg_box"
                 android:background="@drawable/textbox"
-                android:ems="10"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:padding="15dp" />
+                android:padding="@dimen/padding_box" />
 
             <Button
                 android:id="@+id/registerNewBtn"
+                android:text="@string/btn_createAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginStart="@dimen/mrg_box"
+                android:layout_marginEnd="@dimen/mrg_box"
+                android:layout_marginTop="@dimen/mrg_btn"
                 android:background="@drawable/submit"
-                android:text="Registrar"
                 android:textColor="@color/colorPrimary" />
 
-<!--            <Button-->
-<!--                android:id="@+id/regresarLoginBtn"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginStart="10dp"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginEnd="10dp"-->
-<!--                android:layout_marginRight="10dp"-->
-<!--                android:background="@drawable/submit"-->
-<!--                android:text="Regresar Login"-->
-<!--                android:textColor="@color/colorPrimary" />-->
 
-
-
-
-            />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
