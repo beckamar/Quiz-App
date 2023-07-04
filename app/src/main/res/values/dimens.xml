@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="cardView_radio">20dp</dimen>
-    <dimen name="crearCuentaDimen_cardView">24dp</dimen>
     <dimen name="recyclerView">15dp</dimen>
     <dimen name="paddingCategoria">45dp</dimen>
-    <dimen name=""
+
+    //login
+    <dimen name="width_logo">290dp</dimen>
+    <dimen name="height_logo">210dp</dimen>
+    <dimen name="mrgTop_logo">110dp</dimen>
+
+    //card at login
+    <dimen name="width_cardStart">410dp</dimen>
+    <dimen name="height_cardStart">475dp</dimen>
+    <dimen name="radio_cardStart">20dp</dimen>
+    <dimen name="mrg_box">10dp</dimen>
+    <dimen name="sizeTxt_login">25dp</dimen>
+    <dimen name="widthLine_login">80dp</dimen>
+    <dimen name="heightLine_login">5dp</dimen>
+    <dimen name="mrg_box2">20dp</dimen>
+    <dimen name="padding_box">15dp</dimen>
+    <dimen name="mrg_btn">70dp</dimen>
+
+
+
 </resources>
