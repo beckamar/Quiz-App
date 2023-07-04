@@ -10,5 +10,10 @@
 
     <string name="btn_login">Login</string>
     <string name="btn_createAccount">Crear cuenta</string>
+    
+    <string name="programming_category">Programacion II</string>
+    <string name="culture_category">Programacion I</string>
+
+
 
 </resources>

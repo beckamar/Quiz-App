@@ -20,6 +20,16 @@
     <dimen name="padding_box">15dp</dimen>
     <dimen name="mrg_btn">70dp</dimen>
 
+    //menu
+    <dimen name="toolBar_size">180dp</dimen>
+    
+    //category
+    <dimen name="sizeTxt_category">18sp</dimen>
+    <dimen name="size_image">130dp</dimen>
+    <dimen name="height_card">200dp</dimen>
+
+
+
 
 
 </resources>
