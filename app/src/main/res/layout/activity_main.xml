@@ -12,49 +12,33 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:ignore="MissingConstraints" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="wrap_content"
-        android:layout_height="180dp"
-        android:background="@drawable/background_bottom"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="@dimen/toolBar_size"
+        android:background="@drawable/background_head"
+        tools:ignore="MissingConstraints"
+        />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
-        android:layout_marginTop="0dp"
         app:srcCompat="@drawable/logo" />
 
     <me.ibrahimsn.lib.SmoothBottomBar
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/mrg_btn"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
         app:backgroundColor="@color/colorPrimary"
         app:menu="@menu/menu"
-
         />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="180dp"
+        android:id="@+id/subtitle_head"
+        android:layout_width="@dimen/toolBar_size"
         android:layout_height="50dp"
-        android:layout_below="@+id/view"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/toolbar"
         android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
         android:layout_marginTop="-17dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginRight="150dp"
         android:background="@drawable/button_4"
         android:ems="10"
         android:gravity="center"
@@ -68,95 +52,70 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView1"
-        android:layout_width="177dp"
-        android:layout_height="194dp"
+        android:layout_width="@dimen/toolBar_size"
+        android:layout_height="@dimen/height_card"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="280dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:cardCornerRadius="@dimen/mrg_box">
 
 
         <LinearLayout
             android:layout_width="162dp"
             android:layout_height="177dp"
-            android:layout_margin="10dp"
-            android:layout_marginTop="0dp"
+            android:layout_margin="@dimen/mrg_box"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imagen2"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:layout_width="@dimen/size_image"
+                android:layout_height="@dimen/size_image"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
-                app:srcCompat="@drawable/comp" />
+                android:layout_margin="@dimen/mrg_box"
+                app:srcCompat="@drawable/computer" />
 
             <TextView
                 android:id="@+id/category2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Topicos II"
-                android:textColor="@color/shadow_color"
-                android:textSize="18sp" />
+                android:text="@string/culture_category"
+                android:textSize="@dimen/sizeTxt_category"/>
+                />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="177dp"
-        android:layout_height="194dp"
+        android:id="@+id/cardView_programming"
+        android:layout_width="@dimen/toolBar_size"
+        android:layout_height="@dimen/height_card"
         android:layout_marginStart="260dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="280dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        app:cardCornerRadius="@dimen/mrg_box">
 
         <LinearLayout
             android:layout_width="162dp"
             android:layout_height="177dp"
-            android:layout_margin="10dp"
-            android:layout_marginTop="0dp"
+            android:layout_margin="@dimen/mrg_box"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imagen"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
+                android:id="@+id/imageProgramming"
+                android:layout_width="@dimen/size_image"
+                android:layout_height="@dimen/size_image"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
-                app:srcCompat="@drawable/comp" />
+                android:layout_margin="@dimen/mrg_box"
+                app:srcCompat="@drawable/computer" />
 
             <TextView
                 android:id="@+id/category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Topicos III"
-                android:textColor="@color/shadow_color"
-                android:textSize="18sp" />
+                android:text="@string/programming_category"
+                android:textSize="@dimen/sizeTxt_category"/>
         </LinearLayout>
-
-
-
-
-
 
     </androidx.cardview.widget.CardView>
 

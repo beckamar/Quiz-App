@@ -12,7 +12,7 @@
         android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="180dp"
-        android:background="@drawable/background_bottom" />
+        android:background="@drawable/background_head" />
 
     <View
         android:id="@+id/view4"
