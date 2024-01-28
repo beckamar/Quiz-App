@@ -2,9 +2,10 @@
 
 ![Texto alternativo](screens.png)
 
-App programada en Java utilizando Android Studio, estado en desarrollo con 6 pantallas en funcionamiento:
-- Login: Autenticacion de usuarios por medio de Firebase.
-- Sign up: Registro de un nuevo usuario utilizando Firebase.
-- Principal: Muestra los niveles/categorias de los quiz existentes
-- Quiz: Extraccion de las preguntas y opciones utilizando SQLlite y queries, con limite de tiempo y con respuesta de opcion seleccionada inmediata.
-- Resultados: Al finalizar muestra el total de preguntas respondidas correctamente.
+App programmed in Java using Android Studio, currently in development with 6 functional screens:
+
+Login: User authentication through Firebase.
+Sign up: Registration of a new user using Firebase.
+Main: Displays levels/categories of existing quizzes.
+Quiz: Extraction of questions and options using SQLite and queries, with a time limit and immediate feedback on the selected option.
+Results: At the end, it shows the total number of questions answered correctly.
